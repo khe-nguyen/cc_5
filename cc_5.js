@@ -44,3 +44,9 @@ function processPayroll(employee) {
     netPay: netPay
   };
 }
+
+// Step 7: Loop through employees and log results
+for (let emp of employees) {
+  const payroll = processPayroll(emp);
+  console.log(payroll);
+}
