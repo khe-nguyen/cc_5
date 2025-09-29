@@ -8,3 +8,10 @@ const employees = [
   { name: "Azzurro Maize", hourlyRate: 25, hoursWorked: 40 }
 ];
 
+// Step 3: Base pay (Up to 40 hours only)
+function calculateBasePay(rate, hours) {
+  const baseHours = Math.min(hours, 40);
+  return baseHours * rate;
+}
+
+
